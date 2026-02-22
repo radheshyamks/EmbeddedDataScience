@@ -1,9 +1,33 @@
 #include <stdio.h>
+pritamaero21@gmail.com
+mdnazeerali1757@gmail.com
+vkthakur93.vps@gmail.com
+dhruvji090@gmail.com
+narayanp4444@gmail.com
+aniket01.vinay@bharatmatrimony.com
+kalok467@gmail.com
+suryakantsingh53@gmail.com
+vktbharti@gmail.com
+
+radheshyamkumarsingh@amityonline.com
+- cs@flipkart.com
+
+📞 Contact Number
+- Flipkart Toll-Free: 1800 202 9898 or 1800 208 9898
+
+✅ What to Attach
+- Screenshot of your order showing seller name
+- Invoice or order confirmation
+- Delivery status or communication with Flipkart
+
+If you’d like, I can help you draft the full complaint text including these details. Just let me know what issue you want to highlight most (non-delivery, refund delay, etc.).
+8124674
 /*int x,int y;
 void fun(x, y)
 int x,int y;{
 	printf("%d %d\n", x, y);
 }*/
+//https://github.com/radheshyamks/EmbeddedDataScientist
 int main(int argc, char* argv[])
 {
 	printf("Hello World!\n");
@@ -34,6 +58,7 @@ Address         : Vill - Mitwar, Thana – Andar, Dist – Siwan, Bihar, Pin - 8
 Sid:
 6150 + 2044.26 + 28.12 + 130.99
 */
+mf8r6xpbqc
 
 Tata Elxsi
 vikramr@tataelxsi.co.in (9880441262)--> Manager Tata Elxsi
@@ -72,7 +97,16 @@ Radhe@123
 Radhe@0987
 Radhe@24681012
 New --> Radhe@09876543
+IRCTC:
+RadheShyamN
+Radhe@09160
 
+NikkiSinghMR
+Nikki@011
+
+radhemoga
+NsrSpouse*067
+ 
 HR0112743
 Floors 7 & 8, Building No. 12B Raheja Mindspace,
  Hitech City Road, K.Raheja I.T. Park Serilingampally Mandal, Madhapur Hyderabad- 500081 Telangana India
@@ -128,7 +162,11 @@ ns1398211
 Nikki.SinghM51
 Nikki@011
 
-
+SBI PIN
+2335
+Prof: NkSr*07#&$
+Pass: Qyt#G70&$)
+Ntwar1
 
 https://www.shopethnos.com/products/mahagony-red-velvet-lehenga-choli-with-heavy-embroidery-work?variant=40763762639023&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gclid=CjwKCAiAzrWOBhBjEiwAq85QZ4AjbKQ4g5A21U4ZMA4Jolay_UpIWqal9-5P9Iz7kYNuB5Ix_G4JBxoCayoQAvD_BwE
 
@@ -242,3 +280,24 @@ Get-AppxPackage Microsoft.YourPhone -AllUsers | Remove-AppxPackage
 
 // https://pythontutor.com/render.html#mode=display
 // https://godbolt.org/
+
+/*
+@echo off
+REM Set the path to Python 3.13 executable
+"C:\Program Files\Python313\python.exe" -m pip install notebook
+"C:\Program Files\Python313\python.exe" -m pip install ipykernel
+
+REM Add Python 3.13 as a Jupyter kernel
+"C:\Program Files\Python313\python.exe" -m ipykernel install --user --name python3.13 --display-name "Python 3.13"
+
+REM Notify the user
+echo Python 3.13 has been successfully added to Jupyter!
+pause
+
+
+Suresh@1031978
+sakshiengineering667@gmail.com
+8128998667
+SureshS78
+sureshs10.3.1978@gmail.com
+*/
