@@ -37,5 +37,6 @@ int main(int argc, char* argv[], char** env){
         global_sum+= *r;
         free(r);
     }
+    printf("Total sum = %u\n", global_sum);
     return EXIT_SUCCESS;
 }
