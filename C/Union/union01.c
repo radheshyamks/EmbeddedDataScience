@@ -3,7 +3,8 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
-typedef union union01
+/*typedef union union01*/
+typedef union
 {
     /* data */
     uint32_t U;
