@@ -63,7 +63,7 @@ int main(int argc, char* argv[], char** env){
     // for(uint16_t i = 0; i<ARRAY_SIZE; i++){
     //     printf("%u ", Array[i]);
     // }
-
+    /* Sorting using threading concept */
     pthread_t thread_id;
     if(pthread_create(&thread_id, NULL, Insertion_Sort, &ArrayToSort) !=0){
         printf("Failed to creat thread\n");
