@@ -42,7 +42,7 @@ typedef struct{
 //     }
 // }
 void* Insertion_Sort(void* arg){
-    DataPacket*SortPtr = (DataPacket*)arg;
+    InsertionSort_Type *SortPtr = (InsertionSort_Type *)arg;
     uint32_t key=0;
     for(int idx=1, j=0; idx < SortPtr->size; idx++){
         key = SortPtr->Array[idx];
@@ -57,7 +57,7 @@ void* Insertion_Sort(void* arg){
 }
 
 int main(int argc, char* argv[], char** env){
-    DataPacket ArrayToSort = {.size=ARRAY_SIZE, {6,2,8,0,1,3,5,7,9,4}};
+    InsertionSort_Type  ArrayToSort = {.size=ARRAY_SIZE, {6,2,8,0,1,3,5,7,9,4}};
     // uint16_t size = sizeof(Array)/sizeof(Array[0]);
     // Insertion_Sort(Array, size);
     // for(uint16_t i = 0; i<ARRAY_SIZE; i++){
