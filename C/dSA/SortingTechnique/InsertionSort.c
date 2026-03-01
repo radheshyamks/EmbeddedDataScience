@@ -28,7 +28,7 @@
 typedef struct{
     uint16_t size;
     uint32_t Array[ARRAY_SIZE];
-}DataPacket;
+}/*DataPacket*/ InsertionSort_Type;
 // void Insertion_Sort(uint32_t Arr[], uint16_t size){
 //     uint32_t key=0;
 //     for(int idx=1, j=0; idx<size; idx++){
