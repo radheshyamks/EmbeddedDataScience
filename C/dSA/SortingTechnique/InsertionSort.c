@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <pthread.h>
+
+#include "sortMethod.h"
 /*
 #include <assert.h>      
 #include <ctype.h>       
