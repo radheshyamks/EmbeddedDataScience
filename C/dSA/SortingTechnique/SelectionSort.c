@@ -2,6 +2,8 @@
 #include <stdint.h>
 #include <stdlib.h>
 
+#include "sortMethod.h"
+
 #define ARRAY_SIZE 10
 
 void Selection_Sort(uint32_t Arr[], uint16_t size){

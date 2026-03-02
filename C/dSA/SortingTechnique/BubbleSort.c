@@ -17,6 +17,8 @@
 #include "stdint.h"
 #include "stdlib.h"
 
+#include "sortMethod.h"
+
 #define ARRAY_SIZE 10
 typedef uint8_t bool;
 #define false (1!=1)
