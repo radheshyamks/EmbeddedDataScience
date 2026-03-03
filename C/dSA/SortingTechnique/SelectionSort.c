@@ -4,7 +4,7 @@
 
 #include "sortMethod.h"
 
-#define ARRAY_SIZE 10
+// #define ARRAY_SIZE 10
 
 void Selection_Sort(uint32_t Arr[], uint16_t size){
     for(uint16_t i=0; i<(size-1); i++){

@@ -26,7 +26,7 @@
 4. Insert the key where it belongs.
 5. Repeat until the array is sorted.
 */
-#define ARRAY_SIZE 10
+// #define ARRAY_SIZE 10
 typedef struct{
     uint16_t size;
     uint32_t Array[ARRAY_SIZE];
