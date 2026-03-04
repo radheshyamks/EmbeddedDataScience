@@ -1,6 +1,15 @@
 #include "sortMethod.h"
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * file Name: mergeSort.c 
+ * Author: Radheshyam
+ * Date: 04-Feb-2026 formate -> DD-MM-YYYY
+ *                                  ARRAY = {1,6,3,2,8,0,7,4,5,9}
+ *                                  {1,6,3,2,8,0,7,4,5,9}
+ *                                      /        \
+ *                              {1,6,3,2,8}     {0,7,4,5,9} keep on deviding this sub array till one element remain
+ */
 typedef enum{
     ARRAY_LENGTH=10,
 }mergeSortEnum;
