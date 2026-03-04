@@ -24,7 +24,7 @@ uint32_t find_min(uint32_t Arr[], uint16_t size){
     }
     return min;
 }
-int main(int argc, char** argv, char** env){
+int main(int argc, char* argv[], char** env){
     uint32_t Arr1[ARRAY1_SIZE] = {3,2,1,7,0};
     uint32_t Arr2[ARRAY2_SIZE] = {4,6,5,8,9};
 
