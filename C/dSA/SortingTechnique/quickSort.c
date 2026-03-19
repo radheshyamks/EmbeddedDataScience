@@ -1,6 +1,7 @@
 #include "sortMethod.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 typedef struct{
     uint16_t size;
     uint32_t Array[ARRAY_SIZE];
@@ -14,11 +15,16 @@ void swap(uint32_t* val1, uint32_t* val2){
     }
 }
 void QuickSort(uint32_t Arr[], uint16_t size){
+    srand(time(NULL));
     QuickSort_recur(Arr, 0, size-1);
 }
 
 uint16_t partition(uint32_t Arr[], uint16_t low, uint16_t high){
     uint16_t i=low;
+    uint16_t pivot_index = low + ((uint16_t)rand())%(high-low);
+    if(pivot_index != high){
+        swap(&Arr[pivot_index], &Arr[high]);
+    }
     uint32_t pivot_value = Arr[high];
     for(uint16_t j=low; j<high; j++){
         if(Arr[j]<= pivot_value){
