@@ -1,0 +1,8 @@
+# ignore all *.exe files from subdirectory
+**/*.exe
+# ignore build folder
+**/build/
+# ignore all txt file from subdirectory
+**/*.txt
+# ignore all txt file except this CMakeLists.txt
+!**/CMakeLists.txt
