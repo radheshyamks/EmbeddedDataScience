@@ -3,7 +3,10 @@
 #   2) mingw32-make
 # this is root CMakeLists.txt
 cmake_minimum_required(VERSION 3.10)
-project(ArrayProject LANGUAGES CXX)
+project(ArrayProject 
+        VERSION 1.0.0
+        DESCRIPTION "A simple reverse array project"
+        LANGUAGES CXX)
 
 #set the Cpp standard
 set(CMAKE_CXX_STANDARD 11)
