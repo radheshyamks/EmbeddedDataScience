@@ -3,7 +3,7 @@
 #   2) mingw32-make
 # this is root CMakeLists.txt
 cmake_minimum_required(VERSION 3.10)
-project(ArrayProject 
+project(ArrayReverse 
         VERSION 1.0.0
         DESCRIPTION "A simple reverse array project"
         LANGUAGES CXX)
