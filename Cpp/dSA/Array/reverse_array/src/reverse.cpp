@@ -1,11 +1,13 @@
 #include <cstdint>
 #include "reverse_array.hpp"
-
-void reverse_array(uint32_t arr[], uint16_t size){
+namespace reverse_array{
+    revrs_array revrs_array_s;
+}
+void reverse_array::revrs_array::reverse_array(void){
     uint8_t start=0;
-    uint8_t end=size-1;
+    uint8_t end=ARRAY_SIZE-1;
     while(start<=end){
-        swap(arr[start], arr[end]);
+        swap(Arr[start], Arr[end]);
         start++;
         end--;
     }

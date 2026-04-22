@@ -8,9 +8,9 @@ add_library(reverse_lib
             printArray.cpp
         )
 # Define the main executable
-add_executable(array_lib
-                array.cpp
+add_executable(main_lib
+                main.cpp
             )
 
 # Link the executable with the library
-target_link_libraries(array_lib reverse_lib)
+target_link_libraries(main_lib reverse_lib)
