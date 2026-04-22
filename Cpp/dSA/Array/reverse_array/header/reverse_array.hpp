@@ -12,12 +12,7 @@ namespace reverse_array{
             uint32_t Arr[ARRAY_SIZE];
         public:
             // default constructor
-            explicit revrs_array(void){
-                uint32_t temp_arr[ARRAY_SIZE]={2,4,7,0,1,3,6,5,8,9};
-                for(uint8_t i=0; i<ARRAY_SIZE; i++){
-                    Arr[i] = temp_arr[i];
-                }
-            }
+            explicit revrs_array(void);
             //deleted parameterized constructor
             explicit revrs_array(uint32_t)=delete;
             explicit revrs_array(uint32_t, uint32_t)=delete;
@@ -29,9 +24,7 @@ namespace reverse_array{
             revrs_array operator=(revrs_array&)=delete;
             // deleted move assignment operator
             revrs_array operator=(revrs_array&&)=delete;
-            virtual ~revrs_array(){
-                std::cout<<"destructor\n";
-            }
+            virtual ~revrs_array();
             void reverse_array(void);
             void swap(uint32_t& first, uint32_t& second);
             void printArray(void);
