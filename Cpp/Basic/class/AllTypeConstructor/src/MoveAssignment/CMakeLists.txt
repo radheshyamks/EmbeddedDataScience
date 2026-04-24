@@ -1,2 +1,2 @@
 add_library(MoveAssignment_lib MoveAssignment.cpp)
-target_link_directories(MoveAssignment_lib PUBLIC ${CMAKE_SOURCE_DIR}/header)
+target_include_directories(MoveAssignment_lib PUBLIC ${CMAKE_SOURCE_DIR}/header)

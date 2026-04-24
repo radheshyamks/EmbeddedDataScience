@@ -7,6 +7,8 @@
 #include <iostream>
 namespace AllTypeConstructor{
     constexpr uint8_t ARRAY_SIZE=10;
+    constexpr uint8_t CHAR_ARRAY_SIZE = 100;
+    constexpr uint8_t FULL_CHAR_ARRAY_SIZE = CHAR_ARRAY_SIZE - 1;
     class AllConstructorType{
         private:
             char* m_data;

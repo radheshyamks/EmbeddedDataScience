@@ -8,11 +8,13 @@ AllTypeConstructor::AllConstructorType& AllTypeConstructor::AllConstructorType::
         if(other.m_data != nullptr){
             if(this->m_data != nullptr){
                 strncpy(m_data, other.m_data, 15);
+                m_data[15] = '\0';
             }else{
                 m_data = new char[15];
                 strncpy(m_data, other.m_data, 15);
+                m_data[15] = '\0';
             }        
-            delete[] other.m_data;
+            other.m_data=nullptr;
         }
     }
     return *this;

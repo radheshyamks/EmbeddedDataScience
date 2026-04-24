@@ -1,2 +1,2 @@
 add_library(copyConstructor_lib copyConstructor.cpp)
-target_link_directories(copyConstructor_lib PUBLIC ${CMAKE_SOURCE_DIR}/header)
+target_include_directories(copyConstructor_lib PUBLIC ${CMAKE_SOURCE_DIR}/header)
