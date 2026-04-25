@@ -10,8 +10,11 @@ int main(int argc, char* argv[], char** env){
     // char*p = "Radheshyam";
     // char*t = "Kumar";
     // AllTypeConstructor::AllConstructorType obj(static_cast<char*>(p), static_cast<char*>(t));
+    // parameterized constructor
     AllTypeConstructor::AllConstructorType obj("Radheshyam", "Kumar");
+    // parameterized constructor
     AllTypeConstructor::AllConstructorType obj_m("Radheshyam Kumar", "Singh");
+    // default constructor
     AllTypeConstructor::AllConstructorType obj_t;
     obj_t.printArray();
     // calling assignment operator
