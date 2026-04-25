@@ -2,12 +2,12 @@
 #include <cstring>
 // default constructor
 AllTypeConstructor::AllConstructorType::AllConstructorType(){
-    m_ptr = new char[15];
-    m_data = new char[15];
-    strncpy(m_data, "Default String", 14);
-    strncpy(m_ptr, "Default String", 14);
-    m_data[15] = '\0';
-    m_ptr[15] = '\0';
+    m_ptr = new char[CHAR_ARRAY_SIZE];
+    m_data = new char[CHAR_ARRAY_SIZE];
+    strncpy(m_data, "Default String", FULL_CHAR_ARRAY_SIZE);
+    strncpy(m_ptr, "Default String", FULL_CHAR_ARRAY_SIZE);
+    m_data[FULL_CHAR_ARRAY_SIZE] = '\0';
+    m_ptr[FULL_CHAR_ARRAY_SIZE] = '\0';
 }
 
 // destructor
