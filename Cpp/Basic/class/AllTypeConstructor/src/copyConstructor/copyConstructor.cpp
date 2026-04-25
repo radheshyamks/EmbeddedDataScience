@@ -1,6 +1,8 @@
 #include "allTypeConstructor.hpp"
 #include <cstring>
+#include <iostream>
 
+using std::cout;
 // Copy Constructor
 AllTypeConstructor::AllConstructorType::AllConstructorType(AllConstructorType& other){
     m_data = new char[CHAR_ARRAY_SIZE];
@@ -12,9 +14,10 @@ AllTypeConstructor::AllConstructorType::AllConstructorType(AllConstructorType& o
         m_data[0]='\0';
     }
     if(other.m_ptr!=nullptr){
-        strncpy(m_data, other.m_ptr, FULL_CHAR_ARRAY_SIZE);
+        strncpy(m_ptr, other.m_ptr, FULL_CHAR_ARRAY_SIZE);
         m_ptr[FULL_CHAR_ARRAY_SIZE] = '\0';
     }else{
         m_ptr[0]='\0';
     }
+    cout<<"Copy Constructor\n";
 }

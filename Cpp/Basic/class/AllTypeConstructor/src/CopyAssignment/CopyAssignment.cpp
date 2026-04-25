@@ -1,7 +1,8 @@
 #include "allTypeConstructor.hpp"
 #include <cstring>
+#include <iostream>
 
-
+using std::cout;
 AllTypeConstructor::AllConstructorType& AllTypeConstructor::AllConstructorType::operator=(const AllConstructorType& other){
     if(this != &other){
         // deallocating memory
@@ -24,5 +25,6 @@ AllTypeConstructor::AllConstructorType& AllTypeConstructor::AllConstructorType::
             m_ptr[FULL_CHAR_ARRAY_SIZE] = '\0';
         }  
     }
+    std::cout<<"Copy Assignement Operator\n";
     return *this;
 }

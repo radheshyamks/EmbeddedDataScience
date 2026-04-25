@@ -1,6 +1,8 @@
 #include "allTypeConstructor.hpp"
 #include <cstring>
+#include <iostream>
 
+using namespace std;
 
 AllTypeConstructor::AllConstructorType& AllTypeConstructor::AllConstructorType::operator=(AllConstructorType&& other){
     if(this != &other){
@@ -11,5 +13,6 @@ AllTypeConstructor::AllConstructorType& AllTypeConstructor::AllConstructorType::
         other.m_data=nullptr;
         other.m_ptr=nullptr;
     }
+    std::cout<<"Move Assignment Operator\n";
     return *this;
 }

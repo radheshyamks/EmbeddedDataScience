@@ -1,7 +1,9 @@
 #include "allTypeConstructor.hpp"
 #include <cstring>
 #include <iostream>
-// default constructor
+
+using std::cout;
+// parameterized constructor
 AllTypeConstructor::AllConstructorType::AllConstructorType(const char* data, const char* ptr){
     m_ptr = new char[CHAR_ARRAY_SIZE];
     m_data = new char[CHAR_ARRAY_SIZE];
@@ -9,6 +11,7 @@ AllTypeConstructor::AllConstructorType::AllConstructorType(const char* data, con
     strncpy(m_ptr, ptr, FULL_CHAR_ARRAY_SIZE);
     m_data[FULL_CHAR_ARRAY_SIZE] = '\0';
     m_ptr[FULL_CHAR_ARRAY_SIZE] = '\0';
+    std::cout<<"parameterized constructor\n";
 }
 
 void AllTypeConstructor::AllConstructorType::printArray(void){
