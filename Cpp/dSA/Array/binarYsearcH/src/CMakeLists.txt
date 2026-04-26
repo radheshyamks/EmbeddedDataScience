@@ -1,5 +1,7 @@
 # set(DrMemoryPath "C:\Program Files (x86)\Dr. Memory\bin")
 set(DrMemoryPath "C:/Program Files (x86)/Dr. Memory/bin/drmemory.exe")
+file(MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/drmemory_reports")
+
 
 add_subdirectory(BinarySrchArray)
 add_subdirectory(findIndex)
@@ -21,9 +23,12 @@ target_compile_options(BinarySrch_lib PRIVATE -O0 -g)
 target_compile_options(findIndex_lib PRIVATE -O0 -g)
 target_compile_options(PrintArray_lib PRIVATE -O0 -g)
 
-# Add a custom target to run Dr. Memory
+# # Add a custom target to run Dr. Memory
 add_custom_target(run_drmemory
-    COMMAND ${DrMemoryPath} -batch -exit_code_if_errors 1 -no_check_leaks -ignore_kernel  -- $<TARGET_FILE:main_lib>
+    COMMAND ${DrMemoryPath} -batch -exit_code_if_errors 1 
+    -report -report_dir "${CMAKE_BINARY_DIR}/drmemory_reports" 
+    -no_check_leaks -ignore_kernel  
+    -- $<TARGET_FILE:main_lib>
     DEPENDS main_lib
     COMMENT "Running Dr. Memory on main_lib"
 )

@@ -5,10 +5,9 @@ project(AppBinSearch
         DESCRIPTION "Simple program of Binary Search"
         LANGUAGES CXX
 )
-
 # Adjust this path to where Dr. Memory is installed
 set(DrMemoryPath "C:/Program Files (x86)/Dr. Memory/bin")
-
+file(MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/drmemory_reports")
 # Make sure CMake can find it
 find_program(DRMEMORY_EXE drmemory PATHS "${DrMemoryPath}" NO_DEFAULT_PATH)
 if(NOT DRMEMORY_EXE)
@@ -22,4 +21,5 @@ if(WIN32)
     message("This is WINDOWS platform")
     include_directories(${CMAKE_SOURCE_DIR}/header)
     add_subdirectory(${CMAKE_SOURCE_DIR}/src)
+    
 endif()
