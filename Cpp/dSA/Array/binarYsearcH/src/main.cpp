@@ -13,7 +13,7 @@ namespace BinarySearch{
 }
 int main(int argc, char* argv[], char** env){
     // std::vector<uint32_t>v = {1,2,3,4,5,6};
-    uint32_t*p = new uint32_t[BinarySearch::ARRAY_SIZE];
+    // uint32_t*p = new uint32_t[BinarySearch::ARRAY_SIZE];
     uint32_t key=10;
     // BinarySearch::binaryArray_t.Find_Occurance_Index(key);
     // BinarySearch::binaryArray_t.print_first_index();

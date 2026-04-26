@@ -2,8 +2,8 @@
 **/*.exe
 # ignore build folder
 # **/build/
-**/build/*
 !**/build/*.sh
+**/build/*
 # ignore all txt file from subdirectory
 **/*.txt
 # ignore all txt file except this CMakeLists.txt
