@@ -13,7 +13,8 @@ namespace BinarySearch{
     class BinaryArray{
         private:
             uint32_t* m_data;
-            uint8_t idx_pos;
+            uint8_t first_idx_pos;
+            uint8_t last_idx_pos;
             bool owns_data;
         public:
         // deleting constructors
@@ -30,9 +31,13 @@ namespace BinarySearch{
         // deleted Move assignment operator      
         BinaryArray& operator=(BinaryArray&&)=delete;
         void Find_Occurance_Index(uint32_t key);
-        uint8_t find_index(uint32_t start, uint32_t end, uint32_t mid, uint32_t key);
-        uint8_t get_index(void)const;
-        void print_index(void)const;
+        uint8_t find_first_occurance_index(uint32_t start, uint32_t end, uint32_t mid, uint32_t key);
+        uint8_t find_last_occurance_index(uint32_t start, uint32_t end, uint32_t mid, uint32_t key);
+        uint16_t get_first_index(void)const;
+        uint16_t get_last_index(void)const;
+        void print_first_index(void)const; 
+        void print_last_index(void)const;
+        void print_total_occurance(void)const;
         void PrintArra(void)const;
         ~BinaryArray();
     };
