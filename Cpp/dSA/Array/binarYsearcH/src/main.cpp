@@ -18,6 +18,7 @@ int main(int argc, char* argv[], char** env){
     // BinarySearch::binaryArray_t.Find_Occurance_Index(key);
     // BinarySearch::binaryArray_t.print_first_index();
     key=3;
+    BinarySearch::binaryArray_m.PrintArra();
     BinarySearch::binaryArray_m.Find_Occurance_Index(key);
     BinarySearch::binaryArray_m.print_first_index();
     BinarySearch::binaryArray_m.print_last_index();

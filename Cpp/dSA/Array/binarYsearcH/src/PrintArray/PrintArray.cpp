@@ -18,6 +18,7 @@ void BinarySearch::BinaryArray::print_last_index(void)const{
     std::cout<<"last_idx_pos: "<<static_cast<uint32_t>(this->last_idx_pos)<<"\n";
 }
 void BinarySearch::BinaryArray::PrintArra(void) const{
+    std::cout<<"Arr: ";
     for(uint8_t i=0; i<ARRAY_SIZE; i++){
         std::cout<<m_data[i]<<" ";
     }
