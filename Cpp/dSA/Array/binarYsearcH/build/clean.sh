@@ -3,4 +3,4 @@
 # Enable extended globbing
 shopt -s extglob
 # Clean all except clean.sh and build.sh
-rm -rfv !(clean.sh|build.sh)
+rm -rfv !(*.sh)
