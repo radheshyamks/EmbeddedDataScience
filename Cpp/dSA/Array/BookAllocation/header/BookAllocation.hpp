@@ -1,5 +1,18 @@
 /* 
   file Name: BookAllocation.hpp
+  Description:  The DSA Book Allocation Algorithm is a classic problem solved using Binary Search on the Answer, 
+                where the goal is to allocate books to students such that the maximum number of pages assigned to any student 
+                is minimized. 
+                The key is to balance fairness (no student overloaded) while respecting constraints like contiguous allocation.
+Problem Statement
+You are given:
+An array arr[] where each element represents the number of pages in a book.
+An integer k representing the number of students.
+Rules:
+1) Each student must get at least one book.
+2) Books must be allocated in contiguous order (no skipping).
+3) The objective is to minimize the maximum pages assigned to any student.
+If k > number of books, allocation is impossible → return -1.
  */
 #ifndef __BOOKALLOCATION__
 #include <iostream>
