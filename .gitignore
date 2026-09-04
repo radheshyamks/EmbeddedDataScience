@@ -1,0 +1,5 @@
+!*read*.txt
+!read.txt
+*.txt
+**/build
+*.exe
