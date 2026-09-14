@@ -11,7 +11,7 @@ df = pd.read_csv(r"E:/CSV/winequalityN.csv")
 
 # print(pd.set_option("display.max_rows", None))
 # print(pd.set_option("display.max_columns", None))
-# print("dimention: ", df.shape)
+# print("dimension: ", df.shape)
 # --> it will 
 # print(df.describe)
 # --> it will print all the data types of columns
