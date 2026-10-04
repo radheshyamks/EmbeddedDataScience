@@ -11,3 +11,4 @@
 **/CMake
 **/CMakeFiles
 **/python
+.vscode/
