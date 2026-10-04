@@ -9,3 +9,5 @@
 # ignore all txt file except this CMakeLists.txt
 !**/CMakeLists.txt
 **/CMake
+**/CMakeFiles
+**/python
