@@ -1,4 +1,4 @@
-cmake_required_minimum(VERSION 3.10)
+cmake_minimum_required(VERSION 3.10)
 project(StaticBasic VERSION 1.0.0 DESCRIPTION "C Basic Project" LANGUAGES C CXX)
 # add_subdirectory(${CMAKE_SOURCE_DIR}/inc)
 # add_subdirectory(${CMAKE_SOURCE_DIR}/src)
