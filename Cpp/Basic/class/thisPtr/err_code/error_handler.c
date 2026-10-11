@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include "header.h"
 
 void convert_thisPtr_to_uint8_t_ptr(uint8_t* err_code, size_t length){
     // Convert the this pointer to a uint8_t pointer
@@ -12,4 +13,5 @@ void convert_thisPtr_to_uint8_t_ptr(uint8_t* err_code, size_t length){
         // Print the memory content in hexadecimal format
         printf("Memory at offset %zu: add: 0x%p  value: 0x%02X\n", i, &err_code[i],err_code[i]);
     }
+    call_cpp_function(err_code);
 }

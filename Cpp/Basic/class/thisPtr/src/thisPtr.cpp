@@ -1,6 +1,14 @@
+/**
+ * @file thisPtr.cpp
+ * @brief This file implements the functions declared in the header file this_hdr.hpp. It converts the this pointer to a uint8_t pointer and accesses the memory of the class object.
+ * Date: 11-Oct-2026
+ * Author: Radheshyam Kumar Singh
+ */
+#include "type.h"
 #include <iostream>
 #include <cstdint>
 #include "this_hdr.hpp"
+#include "header.h"
 ThisPtr::cThisPtr::cThisPtr() {
     std::cout << "Constructor called" << std::endl;
     this->mem1 = 0xDEADBEEF;
@@ -20,4 +28,7 @@ void ThisPtr::cThisPtr::call_thisPtr(size_t length){
 }
 size_t ThisPtr::cThisPtr::getSize(void)const{
     return sizeof(this->mem1);
+}
+uint32_t ThisPtr::cThisPtr::getMem1(void)const{
+    return this->mem1;
 }

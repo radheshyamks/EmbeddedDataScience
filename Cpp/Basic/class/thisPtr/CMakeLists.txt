@@ -11,8 +11,9 @@ cmake_policy(SET CMP0079 NEW)
 include_directories($(CMAKE_SOURCE_DIR)/inc)
 # add the source directory
 add_subdirectory(${CMAKE_SOURCE_DIR}/err_code)
+add_subdirectory(${CMAKE_SOURCE_DIR}/c2Cpp)
 add_subdirectory(${CMAKE_SOURCE_DIR}/src)
 add_subdirectory(${CMAKE_SOURCE_DIR}/main)
 # Create final executable
 # add_executable(thisPtr)
-target_link_libraries(main PRIVATE thisPtr err_code)
+target_link_libraries(main PRIVATE thisPtr err_code c2Cpp)
