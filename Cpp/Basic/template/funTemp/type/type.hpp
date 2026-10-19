@@ -14,6 +14,6 @@ typedef unsigned int uint_t;
 typedef unsigned short ushort_t;
 typedef long long_t;
 typedef unsigned long ulong_t;
-typedef long long ullong_t;
+typedef long long llong_t;
 typedef unsigned long long ullong_t;
 #endif /*__TYPE_HPP__*/

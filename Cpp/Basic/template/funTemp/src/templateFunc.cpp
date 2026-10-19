@@ -6,6 +6,7 @@
  */
 #include <iostream>
 #include "tmphdr.hpp"
+#include "type.hpp"
 #include <type_traits>
 // Explicit instantiations for the arithmetic combinations you want to support
 // template void funTemp<int, int>(int, int);
@@ -24,8 +25,8 @@ T Arith_Template(T a, T b) {
     return a + b; // Example operation
 }
 template float Arith_Template(float a, float b);
-template int Arith_Template(int a, int b);
-template short Arith_Template(short a, short b);
+template int_t Arith_Template(int_t a, int_t b);
+template ushort_t Arith_Template(ushort_t a, ushort_t b);
 template double Arith_Template(double a, double b);
 
 // template <typename T1, typename T2, 
