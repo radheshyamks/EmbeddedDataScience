@@ -14,8 +14,17 @@ endfunction()
 #   <commands>
 # endfunction()
 # can be invoked through any of
-
+# ~
 # foo()
 # Foo()
 # FOO()
 # cmake_language(CALL foo)
+# set( SOURCES
+#      main.cpp
+#      tempfun.cpp
+# )
+# add_executable(funTempApp ${SOURCES})
+cmake_policy(SET CMP0079 NEW)
+add_subdirectory(${CMAKE_SOURCE_DIR}/main)
+add_subdirectory(${CMAKE_SOURCE_DIR}/src)
+target_link_libraries(mainLib PUBLIC tempfun)
