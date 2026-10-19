@@ -9,16 +9,16 @@ int main() {
     double d1 = 3.14, d2 = 2.71;
 
     std::cout << "Calling Arith_Template with float:\n";
-    std::cout<<"Float: "<<Arith_Template(f1, f2)<<"\n";
+    std::cout<<"Float: "<<Arith_Template<float>(f1, f2)<<"\n";
 
     std::cout << "\nCalling Arith_Template with int:\n";
-    std::cout<<"int_t: "<<Arith_Template(i1, i2)<<"\n";
+    std::cout<<"int_t: "<<Arith_Template<int_t>(i1, i2)<<"\n";
 
     std::cout << "\nCalling Arith_Template with ushort_t:\n";
-    std::cout<<"ushort_t: "<<Arith_Template(us1, us2)<<"\n";
+    std::cout<<"ushort_t: "<<Arith_Template<ushort_t>(us1, us2)<<"\n";
 
     std::cout << "\nCalling Arith_Template with double:\n";
-    std::cout<<"double: "<<Arith_Template(d1, d2)<<"\n";
+    std::cout<<"double: "<<Arith_Template<double>(d1, d2)<<"\n";
 
     return 0;
 }
