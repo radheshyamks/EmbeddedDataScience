@@ -2,4 +2,4 @@
 cmake ../ -G "MinGW Makefiles"
 mingw32-make
 cd main
-./main.exe
+./mainlib.exe

@@ -1,11 +1,11 @@
 include_guard()
-cmake_policy(SET CMP0074 NEW)
 # add_compile_definitions(
 #     PROJECT_NAME="${PROJECT_NAME}"
 #     PROJECT_VERSION="${PROJECT_VERSION}"
 #     PROJECT_DESCRIPTION="${PROJECT_DESCRIPTION}"
 #     PROJECT_HOMEPAGE_URL="${PROJECT_HOMEPAGE_URL}"
 # )
+cmake_policy(SET CMP0079 NEW)
 add_compile_options(
     -Wall
     -Wextra
