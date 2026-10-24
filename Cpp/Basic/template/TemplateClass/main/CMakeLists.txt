@@ -1,0 +1,10 @@
+add_executable(
+    TemplateClassMain 
+    main.cpp
+)
+target_include_directories(
+    TemplateClassMain 
+    PUBLIC 
+    ${CMAKE_SOURCE_DIR}/include
+    ${CMAKE_SOURCE_DIR}/types
+)

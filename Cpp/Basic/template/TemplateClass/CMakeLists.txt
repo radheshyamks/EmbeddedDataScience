@@ -8,3 +8,8 @@ project(
     LANGUAGES C CXX
 )
 include(src.cmake)
+target_link_libraries(
+    TemplateClassMain
+    PUBLIC
+    TemplateClass
+)

@@ -45,3 +45,9 @@ add_compile_options(
 # )
 # include(CMakePackageConfigHelpers)
 # include(CMakeDependentOption)
+# add_compile_definitions(
+#     __ARITHMETIC__
+# )
+add_definitions(
+    -D__ARITHMETIC__
+)

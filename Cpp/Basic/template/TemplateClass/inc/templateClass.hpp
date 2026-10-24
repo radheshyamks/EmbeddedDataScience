@@ -1,5 +1,5 @@
 /**
- * @file tmp_class.hpp
+ * @file templateClass.hpp
  * @brief A simple template class that holds a value of type T and provides basic operations.
  * @author Radheshyam
  * @date 24-Oct-2026
@@ -10,7 +10,7 @@
 #include <utility>
 #include <type_traits>
 #include <cstdint>
-namespace{
+namespace TemplateClass{
     template <typename T>
     class TmpClass{
         private:

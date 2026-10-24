@@ -1,0 +1,11 @@
+add_library(
+    TemplateClass 
+    STATIC 
+    TemplateClass.cpp
+)
+target_include_directories(
+    TemplateClass 
+    PUBLIC 
+    ${CMAKE_SOURCE_DIR}/include
+    ${CMAKE_SOURCE_DIR}/types
+)
