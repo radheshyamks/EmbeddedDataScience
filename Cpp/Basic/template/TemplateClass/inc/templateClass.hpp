@@ -4,7 +4,7 @@
  * @author Radheshyam
  * @date 24-Oct-2026
  */
-#if !defined(__TMP_CLASS_HPP__)
+#if !defined(__TEMPLATE_CLASS_HPP__)
 #define __TMP_CLASS_HPP__
 #include <iostream>
 #include <utility>
@@ -50,4 +50,4 @@ namespace{
             void set_value(T value);
     };
 }
-#endif /* __TMP_CLASS_HPP__*/
+#endif /* __TEMPLATE_CLASS_HPP__*/
