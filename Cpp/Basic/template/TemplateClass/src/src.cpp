@@ -75,5 +75,5 @@ namespace TemplateClass{
 template class TemplateClass::TmpClass<uint16_t>;
 template class TemplateClass::TmpClass<uint32_t>;
 template class TemplateClass::TmpClass<float32_t>;
-template class TemplateClass::TmpClass<double>;
+template class TemplateClass::TmpClass<float64_t>;
 template class TemplateClass::TmpClass<std::string>;
