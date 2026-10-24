@@ -12,7 +12,7 @@ typedef signed long long int64_t;
 typedef float float32_t;
 typedef double float64_t;
 typedef long double float128_t;
-#endif /* __Arithmetic__ */
+#endif /* __ARITHMETIC__ */
 typedef bool bool_t;
 typedef enum{
     FALSE = 0,
