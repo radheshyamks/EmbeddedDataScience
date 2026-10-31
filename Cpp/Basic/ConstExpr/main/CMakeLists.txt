@@ -1,0 +1,10 @@
+add_executable(
+    constEprMain
+    main.cpp
+)
+target_include_directories(
+    constEprMain
+    PUBLIC
+    ${CMAKE_SOURCE_DIR}/inc
+    ${CMAKE_SOURCE_DIR}/types
+)
