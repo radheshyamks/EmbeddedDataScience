@@ -1,0 +1,10 @@
+add_executable(
+    mainLib
+    main.cpp
+)
+target_include_directories(
+    mainLib
+    PUBLIC
+    ${CMAKE_SOURCE_DIR}/inc
+    ${CMAKE_SOURCE_DIR}/types
+)

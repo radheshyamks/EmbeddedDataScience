@@ -1,0 +1,10 @@
+add_library(
+    enumLib
+    src.cpp
+)
+target_include_directories(
+    enumLib 
+    PUBLIC
+    ${CMAKE_SOURCE_DIR}/inc
+    ${CMAKE_SOURCE_DIR}/types
+)
