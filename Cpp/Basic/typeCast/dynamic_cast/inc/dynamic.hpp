@@ -28,9 +28,9 @@ namespace DynamicCast{
             /* Move assugnment operator */
             dynamicCast& operator=(dynamicCast&& other)noexcept;
             /* destructor */
-            ~dynamicCast();
+            virtual ~dynamicCast();
             /* member function to get the value */
-            virtual uint16_t getValue(void)const;
+            uint16_t getValue(void)const;
             /* member function to set the value */
             void setValue(uint16_t value);
     };
