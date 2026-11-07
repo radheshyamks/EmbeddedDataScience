@@ -1,0 +1,1 @@
+message("Configuring const_cast example...")

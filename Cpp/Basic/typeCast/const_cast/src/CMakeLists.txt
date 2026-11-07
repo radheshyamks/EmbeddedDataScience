@@ -1,0 +1,11 @@
+add_library(
+    constLib
+    STATIC
+    const_cast.cpp
+)
+target_include_directories(
+    constLib
+    PUBLIC
+    ${CMAKE_SOURCE_DIR}/inc
+    ${CMAKE_SOURCE_DIR}/types
+)
