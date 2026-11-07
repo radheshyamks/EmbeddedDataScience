@@ -23,5 +23,30 @@ int main(int argc, char* argv[], char** env){
     }else{
         std::cout<<"DerivedA1 is nullptr"<<std::endl;
     }
+    DynamicCast::DynA* DerivedA2 = dynamic_cast<DynamicCast::DynA*>(Base1);
+    DynamicCast::DynB* DerivedB2 = dynamic_cast<DynamicCast::DynB*>(Base2);
+    if(DerivedA2!=nullptr){
+        std::cout<<"DerivedA2 value: "<<DerivedA2->getValue()<<std::endl;
+    }else{
+        std::cout<<"DerivedA2 is nullptr"<<std::endl;
+    }
+    if(DerivedB2!=nullptr){
+        std::cout<<"DerivedB2 value: "<<DerivedB2->getValue()<<std::endl;
+    }else{
+        std::cout<<"DerivedB2 is nullptr"<<std::endl;
+    }
+    /* upcast */
+    DynamicCast::dynamicCast* Base3 = dynamic_cast<DynamicCast::dynamicCast*>(DerivedA);
+    DynamicCast::dynamicCast* Base4 = dynamic_cast<DynamicCast::dynamicCast*>(DerivedB);
+    if(Base3!=nullptr){
+        std::cout<<"Base3 value: "<<Base3->getValue()<<std::endl;
+    }else{
+        std::cout<<"Base3 is nullptr"<<std::endl;
+    }
+    if(Base4!=nullptr){
+        std::cout<<"Base4 value: "<<Base4->getValue()<<std::endl;
+    }else{
+        std::cout<<"Base4 is nullptr"<<std::endl;
+    }
     return EXIT_SUCCESS;
 }
