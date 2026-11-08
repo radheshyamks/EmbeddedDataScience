@@ -1,0 +1,11 @@
+add_library(
+    funPtrLib
+    STATIC
+    funPtr.cpp
+)
+target_include_directories(
+    funPtrLib
+    PUBLIC
+    ${CMAKE_SOURCE_DIR}/inc
+    ${CMAKE_SOURCE_DIR}/types
+)
