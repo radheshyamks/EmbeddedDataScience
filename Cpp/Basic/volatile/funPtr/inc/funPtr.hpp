@@ -7,6 +7,7 @@ namespace FunPtr{
     uint32_t addOne(uint32_t x);
     class funPtr{
         private:
+            uint32_t m_result;
             uint32_t (*funcPtr)(uint32_t);
         public:
             funPtr(uint32_t (*ptr)(uint32_t));

@@ -6,8 +6,8 @@ namespace FunPtr{
     }
     void funPtr::callFunc(uint32_t x){
         std::cout<<"funPtr callFunc called"<<std::endl;
-        uint32_t result = funcPtr(x);
-        std::cout<<"Result: "<<result<<std::endl;
+        m_result = funcPtr(x);
+        std::cout<<"Result: "<<m_result<<std::endl;
     }
     funPtr::~funPtr(){
         std::cout<<"funPtr destructor called"<<std::endl;
