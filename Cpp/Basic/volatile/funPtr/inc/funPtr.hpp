@@ -19,7 +19,7 @@ namespace FunPtr{
             uint32_t (*getFuncPtr())(uint32_t);
             uint32_t (*OptFuncPtr(bool))(uint32_t);
             void callFunc(uint32_t);
-            uint32_t getSizeof(void)const;
+            uint8_t getSizeof(void)const;
             /* destructor */
             ~funPtr();
     };

@@ -25,7 +25,7 @@ namespace FunPtr{
     uint32_t (*funPtr::OptFuncPtr(bool condition))(uint32_t x){
         return (condition==true)?&addOne:&addTwo;
     }
-    uint32_t funPtr::getSizeof(void)const{
+    uint8_t funPtr::getSizeof(void)const{
         return sizeof(FuncType);
     }
     extern funPtr funptr;

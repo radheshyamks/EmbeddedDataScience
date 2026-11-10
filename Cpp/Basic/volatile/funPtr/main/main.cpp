@@ -17,7 +17,7 @@ int main(int argc, char* argv[],char** env){
     for(uint8_t i=0; i< OPTFUNC_SIZE; i++){
         std::cout<<"Result from OptFuncPtr: "<<result[i]<<std::endl;
     }
-    uint16_t size = FunPtr::funptr.getSizeof();
-    std::cout<<"size of FuncType: "<<size<<std::endl;
+    uint8_t size = FunPtr::funptr.getSizeof();
+    std::cout<<"size of FuncType: "<<static_cast<uint16_t>(size)<<std::endl;
     return EXIT_SUCCESS;
 }
